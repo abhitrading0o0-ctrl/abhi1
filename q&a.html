@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101f32">
+  <title>A Gentle Doorway for Aira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js" defer></script>
+</head>
+<body class="page-contact">
+  <div class="page-transition" aria-hidden="true"></div>
+
+  <div class="ambient ambient-contact" aria-hidden="true">
+    <div class="aura aura-one"></div>
+    <div class="aura aura-two"></div>
+    <div class="beam beam-one"></div>
+    <div class="beam beam-two"></div>
+    <div class="particle-field" data-particle-kind="orb" data-particle-count="16"></div>
+    <div class="particle-field" data-particle-kind="sparkle" data-particle-count="12"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="index.html">For Aira</a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Story</a>
+        <a class="nav-link" href="real.html">Gentle reminders</a>
+        <a class="nav-link is-current" href="q&amp;a.html">Reach out</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <section class="container contact-hero reveal">
+      <p class="eyebrow">A safe little doorway</p>
+      <h1>If you ever want to reach out</h1>
+      <p class="contact-lead">You do not have to reply.
+You do not have to decide now.
+This is only here if you ever want it.</p>
+    </section>
+
+    <section class="container contact-layout" data-contact-page>
+      <article class="panel whatsapp-panel reveal" data-gate-shell>
+        <p class="panel-kicker">Before opening contact</p>
+        <h2>A few soft questions first.</h2>
+        <p class="whatsapp-intro">Only if you feel like it. These are just small, gentle check-ins before my WhatsApp appears.</p>
+
+        <div class="question-grid" aria-label="Gentle questions">
+          <fieldset class="question-card">
+            <legend>How are you feeling right now?</legend>
+            <div class="question-options" data-question="feeling">
+              <input class="question-choice" type="radio" name="feeling" id="feeling-tired" value="tired">
+              <label class="question-label" for="feeling-tired">A little tired</label>
+              <input class="question-choice" type="radio" name="feeling" id="feeling-okay" value="okay">
+              <label class="question-label" for="feeling-okay">A bit okay</label>
+              <input class="question-choice" type="radio" name="feeling" id="feeling-talk" value="talk">
+              <label class="question-label" for="feeling-talk">I feel like talking</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>What kind of reply would feel nicest?</legend>
+            <div class="question-options" data-question="reply-style">
+              <input class="question-choice" type="radio" name="reply-style" id="reply-style-soft" value="soft">
+              <label class="question-label" for="reply-style-soft">Soft and gentle</label>
+              <input class="question-choice" type="radio" name="reply-style" id="reply-style-short" value="short">
+              <label class="question-label" for="reply-style-short">Short and simple</label>
+              <input class="question-choice" type="radio" name="reply-style" id="reply-style-later" value="later">
+              <label class="question-label" for="reply-style-later">Whenever possible</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question-card">
+            <legend>What feels easiest for you?</legend>
+            <div class="question-options" data-question="comfort">
+              <input class="question-choice" type="radio" name="comfort" id="comfort-text" value="text">
+              <label class="question-label" for="comfort-text">Text for a bit</label>
+              <input class="question-choice" type="radio" name="comfort" id="comfort-save" value="save">
+              <label class="question-label" for="comfort-save">Just save the number</label>
+              <input class="question-choice" type="radio" name="comfort" id="comfort-slow" value="slow">
+              <label class="question-label" for="comfort-slow">Take it slowly</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="whatsapp-actions">
+          <p class="gate-note" data-gate-note>Answer all three questions to reveal the contact below.</p>
+        </div>
+
+        <div class="whatsapp-reveal" data-contact-reveal>
+          <p class="panel-kicker">WhatsApp contact</p>
+          <a class="whatsapp-number" href="https://wa.me/917055502899" target="_blank" rel="noopener noreferrer">7055502899</a>
+          <p class="whatsapp-note">Use it only if and when it feels right.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://wa.me/917055502899" target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+            <button class="button button-secondary" type="button" data-copy-number data-number="7055502899">Copy number</button>
+          </div>
+          <p class="status-message" data-copy-note>Take your time.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
